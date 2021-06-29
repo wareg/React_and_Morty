@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  background-color: #6a6b75;
+}
+
+button {
+  cursor: pointer;
+}
+
+#pagiN {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#extraDataBtn {
+  display: block;
+  margin: 0 auto 20px;
+  opacity: .5;
+}
+#extraDataBtn:hover {opacity: 1;}
+
+
+
+.theCardsDiv {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0px;
+  border-radius: 5px;
+  width: auto;
+  max-width: 90vw;
+  height: auto;
+  max-height: 80vh;
+  transition: 1000ms all;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  position: relative;
+  height: auto;
+  transition: 1000ms all;
+  display: inline-flex;
+  background: whitesmoke;
+  padding: 12px;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 25px;
+  font-weight: bold;
+  background: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 18px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+	background: #2444fa !important;
+	color: #eee;
+}
+
+#top-wrapper img {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 600px;
+}
+
+#button-container {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  width: 500px;
+}
+
+#button-container button {
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  font-size: 20px;
+  background-color: #00b3ca;
+  /* background-color: #ccfffd; */
+}
+#button-container button:hover {
+  font-weight: 600;
+}
+
+#top-wrapper p {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 80vw;
+  height: 100px;
+}
+/* ////////////////////////////////////////// */
+#pagination-bar {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  width: 80vw;
+}
+
+#pagination-bar button, .tempBtn {
+  width: auto;
+  height: 30px;
+  margin: 4px;
+  background-color: #00b3ca;
+  border-radius: 50%;
+}
+
+/* ////////////////////////////////////////// */
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.small-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 15px;
+  color: #333;
+  background-color: rgba(158, 217, 231, 0.2);
+  box-shadow: 0 0 1em black;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.small-card:hover {
+  transform: scale(1.07);
+  transition: all 0.5s ease;
+}
+
+h2 {
+  margin-left: 5%;
+  font-family: "Bangers", cursive;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-data {
+  width: 45%;
+}
+
+.small-card p {
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+.small-card img {
+  width: 180px;
+  border: 1px solid black;
+}
+
+.small-card button {
+  margin-left: 30%;
+  background-color: #333;
+  color: white;
+  height: 25px;
+}
+
+.small-card button:hover {
+  color: #333;
+  background-color: white;
+}
