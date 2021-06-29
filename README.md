@@ -40,24 +40,3 @@ Your friend built the tools for the data fetching, you just need to use the data
 
 6. [OPTIONAL] It is easier to jump between pagination pages by just scrolling down. When the user scrolls down to the bottom of the list of characters/locations, the next list of characters/locations shows up at the bottom of the list and the user can continue to scroll down.
     - When a list of characters/locations shows up and we scoll down to the bottom of the list, new characters/locations show up at the bottom of the list
-
-## General requirements
-
-None
-
-## Hints
-
-- Before you start the project, type `npm install`/`yarn install` in the terminal. That will create the `node_modules` folder for you.
-- When you start the project, take a look at the console. The starter code log out the objects that you will get and how you can get the data.
-- You don't need to understand what is going on in the given custom hooks, they are just aid you to have data that you can work with.
-- If you want to get characters to present, use the `useCharacters` from `api/useData.js`.
-  The requested data is too big to get in one JSON therefore a pagination list is returned. A pagination list has more pages with different objects. In this case one page contains 20 characters from page no. 1. If you want to get more characters from other pages, you just need to change the parameter of the `useCharacters` hook to the page number you want to get.
-- The JSON you will get has 2 property: `info` that contains information about the pagination you requested and `results` that contains the characters from the pagination. It is true to the `useLocations` hook also. If you want to see an example of the JSON you get, you can find the documentation of the webpage you get the data from. YOU DON'T NEED TO CARE ABOUT THE API! Everything you need from the API is already writen. Just use the custom hooks from the `useData.js` file.
-
-## Background materials
-
-- <i class="far fa-exclamation"></i> [Custom hooks](https://reactjs.org/docs/hooks-custom.html)
-- <i class="far fa-book-open"></i> [What is JSON?](https://en.wikipedia.org/wiki/JSON)
-- <i class="far fa-book-open"></i> [What is pagination for?](https://www.interaction-design.org/literature/article/split-the-contents-of-a-website-with-the-pagination-design-pattern)
-- <i class="far fa-book-open"></i> [Characters JSON example](https://rickandmortyapi.com/documentation/#character)
-- <i class="far fa-book-open"></i> [Locations JSON example](https://rickandmortyapi.com/documentation/#location)
